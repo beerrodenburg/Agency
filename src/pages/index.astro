@@ -1,0 +1,642 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steal Friday — AI Setup for Shopify Brands</title>
+    <meta name="description" content="Get 10+ hours back every week. I set up an AI system with your brand voice, products, and SOPs — then train your team. Done in 14 days. Full refund if it doesn't deliver." />
+    <meta property="og:title" content="Steal Friday — AI Setup for Shopify Brands" />
+    <meta property="og:description" content="Get 10+ hours back every week. AI system configured for your business, set up in 14 days. Full refund guarantee." />
+    <meta property="og:image" content="https://stealfriday.com/assets/chef-kitchen.webp" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Steal Friday — AI Setup for Shopify Brands" />
+    <meta name="twitter:description" content="Get 10+ hours back every week. AI system configured for your business, set up in 14 days. Full refund guarantee." />
+    <meta name="twitter:image" content="https://stealfriday.com/assets/chef-kitchen.webp" />
+    <link rel="canonical" href="https://stealfriday.com/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://stealfriday.com/#organization",
+          "name": "Steal Friday",
+          "url": "https://stealfriday.com"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "I've been burned by agencies before. How are you different?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Because this isn't an agency. There's no retainer. No vague \"deliverables\" that look nice in a PDF but change nothing about your Tuesday. It's a one-time build with a specific outcome: 10+ hours a week saved. And if it doesn't deliver within 30 days, you don't pay. No agency on earth has ever offered you that. Because they can't."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "My team won't actually use it.",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "That's exactly why I train them hands-on. Not a PDF manual. Not a Loom link. I get on a call with your team, build prompts for their actual workflows, and I'm one message away for 30 days after handoff. Most AI setups fail because the team never actually uses them. I build around that from day one. If your team doesn't use it, I've failed. And you don't pay."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "I've tried AI tools before and they didn't stick.",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yeah, because those tools were a raw brain with no skills, no memory, and no connection to your actual tools. Of course they didn't stick. That's like buying a $3,000 espresso machine and wondering why your coffee tastes like shit when you've never dialed in the grind. This is a system configured specifically for your business. It knows your brand, your products, your SOPs from day one. Big, big difference."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know you can actually do this? You're new.",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "That's exactly why the guarantee exists. I'm not asking you to trust a portfolio. I'm asking for a chance to prove it. And I'm putting my entire fee on the line. If the system doesn't deliver 10+ hours a week within 30 days, I eat the cost. Not you. I couldn't make that offer if I wasn't confident it works."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What if the AI tools change or break after you leave?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The system is yours. The skills, the memory, the connections, everything lives in your environment, on your accounts. Training ensures your team can maintain and adjust it. And the system gets smarter over time, any process your team refines becomes a new skill, so it keeps improving after I leave. I'm available for 30 days post-handoff for exactly this reason."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can't I just set this up myself?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Honestly? You could. The same way you could build your own Shopify theme or run your own ads. The question is whether the 20–40 hours it would take you to figure out the right AI tool, build the skills, set up the memory, wire up the connections, and get the guardrails right — is worth more than having someone who's already done it build it for you in two weeks. (If you're reading this page, I think you already know the answer.)"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://stealfriday.com/#service",
+          "serviceType": "AI System Setup",
+          "provider": {
+            "@id": "https://stealfriday.com/#organization"
+          },
+          "url": "https://stealfriday.com"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-[var(--color-white-bg)] text-[var(--color-text-dark)] font-sans selection:bg-[var(--color-purple-accent)] selection:text-white">
+
+      <!-- NAV BAR -->
+      <nav class="bg-[var(--color-dark-bg)] border-b border-white/10 px-6 py-5 flex justify-center items-center">
+        <img src="/assets/steal-friday-logo.svg" alt="Steal Friday" class="h-7" />
+      </nav>
+
+      <!-- SECTION 1 — HERO -->
+      <section class="bg-[var(--color-dark-bg)] text-white section-padding px-6 text-center flex flex-col items-center">
+        <div class="bg-[rgba(167,139,250,0.08)] border border-[rgba(167,139,250,0.25)] rounded-[50px] px-[18px] py-[8px] text-[var(--color-purple-light)] text-[12px] font-semibold uppercase tracking-[1.5px] mb-8 inline-block">
+          <span class="live-dot-wrapper"><span class="live-dot"></span></span> BREAKING: <span id="breaking-date"></span> — WILD DETAILS EMERGE ABOUT…
+        </div>
+
+        <h1 class="heading-max font-bold mb-8">
+          How business owners are getting 10+ hours back every week and quietly taking Fridays off with a new secret AI-system set up in <span class="bg-white text-[#1A1A1A] px-[16px] py-[4px] rounded-[8px] font-bold inline-block shadow-[0_0_30px_rgba(127,86,217,0.35)] mx-1">14 days</span>
+        </h1>
+
+        <p class="body-max text-[16px] md:text-[20px] leading-[1.5] text-center mb-10">
+          And claim the same repetitive tasks that used to eat 2+ hours of their day (reports, emails, customer service) now take less than 10 minutes. All running on tools their team already uses.
+        </p>
+
+        <a href="https://cal.com/beerrodenburg/strategy" target="_blank" rel="noopener noreferrer" class="inline-block bg-[var(--color-purple-accent)] text-white font-bold text-[16px] md:text-[20px] py-[14px] md:py-[20px] px-[28px] md:px-[52px] rounded-[10px] shadow-[0_6px_32px_rgba(127,86,217,0.45)] hover:bg-[#6e48c2] hover:scale-[1.03] active:scale-[0.98] transition-all duration-150 no-underline mb-4">Show Me How This Works</a>
+        <p class="text-white/60 text-[13px]">30 minutes. No pitch. No bullshit. Just clarity on where your business is bleeding time.</p>
+      </section>
+
+
+      <!-- SECTION 2 — PAIN / LETTER OPENING -->
+      <section class="section-padding px-6">
+        <h2 class="heading-max font-bold text-center mb-12">
+          Stop being the most expensive employee doing the cheapest work in your business
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] space-y-6">
+          <p>Dear Brand Owner,</p>
+          <p>You grabbed your phone before your feet hit the floor.</p>
+          <p>Slack first. Four unread threads.</p>
+          <p>Then email. Your 3PL flagged a shipping delay. Your media buyer needs creative approval. There's a customer complaint your CS person escalated.</p>
+          <p class="italic">Ah yes. Another morning in paradise.</p>
+          <p>You had plans for this morning. Strategy stuff. The Q2 marketing plan. That new product launch you keep pushing back.</p>
+          <p>Instead, you're pulling last week's ad performance from Triple Whale. <span class="font-bold">Manually. Again.</span></p>
+          <p>Then cross-referencing it with Klaviyo. <span class="font-bold">Manually. Again.</span></p>
+          <p>Then updating a spreadsheet that three people need but nobody maintains.</p>
+          <p><span class="font-bold">It's 11:30am.</span> You haven't done a single thing that actually grows the business.</p>
+          <p><span class="highlight">And you know what the worst part is? You're <span class="italic">good</span> at this stuff. That's the trap. You can do it faster than anyone on your team. So you keep doing it. And doing it. And doing it.</span></p>
+          <p>Friday rolls around and you're still catching up on what Monday was supposed to be. That day off you keep promising yourself? It never comes.</p>
+          <p>And it's not just the hours. It's what it costs you outside of work.</p>
+          <p>You're at dinner with your partner. But mentally you're triaging tomorrow's to-do list. You check Slack under the table and pretend you didn't.</p>
+          <p>Weekends feel like a shorter version of the workweek. Just without the team asking you questions.</p>
+          <p>You built this brand so you could have freedom. But most days it feels like <span class="font-bold">the brand owns you.</span></p>
+
+          <div class="text-center py-5 text-[60px] md:text-[100px]">🤦‍♂️</div>
+
+          <p class="font-bold">Sound familiar?</p>
+          <p>Here's the part nobody talks about:</p>
+
+          <p class="font-bold text-[18px] md:text-[22px] leading-[1.6] mt-8">You didn't build a $2M+ brand to spend your Tuesday morning troubleshooting a Zapier workflow.</p>
+          <p class="font-bold text-[18px] md:text-[22px] leading-[1.6]">You didn't hire a team of five so you could still be the one answering customer emails about shipping times.</p>
+          <p class="font-bold text-[18px] md:text-[22px] leading-[1.6]">You didn't sacrifice years of late nights and missed holidays so you could be the most expensive person in the company doing the cheapest work.</p>
+
+          <p class="font-bold mt-8">But here you are.</p>
+          <p>And the worst part? You've tried to fix it.</p>
+          <p>There is a fix. A real one. I'll show you exactly what it looks like in a few minutes.</p>
+          <p>But first, I need you to see why everything you've tried so far keeps falling short.</p>
+          <p class="italic">(Trust me, this part's important.)</p>
+        </div>
+      </section>
+
+      <!-- SECTION 3 — 4 AI TRAPS -->
+      <section class="pt-8 pb-16 px-6 bg-[var(--color-white-bg)]">
+        <h2 class="heading-max font-bold text-center mb-12">
+          What you should never do when trying to "automate" your Shopify business
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] space-y-6">
+          <p><span class="font-bold">You've used AI.</span></p>
+          <p>You've heard what it can do. The demos. The Twitter threads. The "I replaced my entire team with ClawdBot" posts.</p>
+          <p>You're not skeptical. You know AI is powerful.</p>
+          <p>You just haven't had time to figure out how to make it work for <span class="italic">your</span> business.</p>
+          <p><span class="highlight">Between managing your team, putting out fires, and running the day-to-day, "go deep on AI" keeps getting pushed to next week.</span></p>
+          <p><span class="font-bold">And next week never comes.</span></p>
+          <p>So here's what you've done instead.</p>
+          <p>You opened ChatGPT. Typed a question. Got a decent answer.</p>
+          <p>Maybe you used it to draft email copy. Brainstorm content ideas. Get advice on a marketing problem.</p>
+          <p>Useful.</p>
+          <p>But every single time, you start <span class="font-bold">from zero.</span></p>
+          <p><span class="highlight">It doesn't know your brand. Doesn't know your products. Doesn't know your 3PL has a 48-hour lead time or that your ad account is structured differently than most.</span></p>
+          <p>You spend 10 minutes giving context for 2 minutes of generic output.</p>
+          <p>Eventually you realize it's faster to just do the damn task yourself.</p>
+          <p><span class="font-bold">That's not AI working for you. That's you working for AI.</span></p>
+          <p>So you got clever.</p>
+          <p>Uploaded a bunch of PDFs. Pasted in your website. Dumped your SOPs into the chat.</p>
+          <p>Figured if you gave it enough context, it would finally get your business.</p>
+          <p>Instead, responses got slower. Less accurate.</p>
+          <p>New chat. Re-upload everything. Same shit.</p>
+          <p>You gave it your brand voice guidelines. Three conversations later it was writing like a generic marketing blog again.</p>
+          <p>Because here's the thing:</p>
+          <p><span class="font-bold">AI has a short-term memory.</span></p>
+          <p>The more context you give it, the better it performs.</p>
+          <p>But the more you talk to it, the more it forgets.</p>
+          <p><span class="font-bold">AI needs a system.</span></p>
+          <p><span class="highlight">Without one, it's an assistant with early-onset amnesia. Brilliant in week one. Progressively losing everything you taught it.</span></p>
+          <p>Maybe you tried keeping a prompt list. A Google Doc with your best prompts so you don't rewrite them every time.</p>
+          <p>That doesn't solve the forgetting problem.</p>
+          <p>It doesn't connect to your tools. It doesn't know what happened yesterday.</p>
+          <p>You're still copy-pasting context into a blank chat window hoping this time it sticks.</p>
+          <p>You know AI should be saving you hours. <span class="font-bold">Instead it's costing you hours.</span></p>
+          <p>And the worst part? You can't even tell if the problem is the AI or you.</p>
+          <p class="italic">(Spoiler: it's neither. I'll explain in a sec.)</p>
+        </div>
+      </section>
+
+      <!-- SECTION 3B — THE "HUMAN GLUE" PROBLEM -->
+      <section class="pt-8 pb-16 px-6 bg-[var(--color-white-bg)]">
+        <h2 class="heading-max font-bold text-center mb-12">
+          The "human glue" problem: why every system in your business still requires YOU to connect the dots
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] space-y-6">
+          <p>And meanwhile, the old problems haven't gone anywhere.</p>
+          <p>You hired people. Payroll went up. The work didn't go down.</p>
+          <p>The bottleneck was never headcount.</p>
+          <p><span class="highlight">It was the fact that every system in your business requires YOU as the human glue between them.</span></p>
+          <p>Shopify doesn't talk to your project management tool.</p>
+          <p>Klaviyo doesn't talk to your ad reports.</p>
+          <p>Your SOPs live in a Google Doc nobody's opened since you wrote them.</p>
+          <p>Another person just means another person asking you questions. Waiting for your approvals. Needing your context to do their job.</p>
+          <p>You tried an agency. <span class="font-bold">$5k/month.</span> A kickoff call, a Slack channel, and a "strategy deck."</p>
+          <p>Three months later you couldn't point to a single thing that changed in your actual day-to-day operations.</p>
+          <p><span class="highlight">Because agencies sell deliverables. Reports. Audits. Recommendations.</span></p>
+          <p><span class="font-bold">They don't sit inside your business and do the work.</span></p>
+          <p>So here you are. Doing it yourself. Because at least when you do it, it gets done right.</p>
+          <p class="italic">But you know this isn't sustainable.</p>
+          <p>Something has to change. And not "try another AI tool" change.</p>
+          <p><span class="font-bold">The tools were never the problem.</span></p>
+        </div>
+
+        <div class="text-center mt-10">
+          <a href="https://cal.com/beerrodenburg/strategy" target="_blank" rel="noopener noreferrer" class="inline-block bg-[var(--color-purple-accent)] text-white font-bold text-[16px] md:text-[20px] py-[14px] md:py-[20px] px-[28px] md:px-[52px] rounded-[10px] shadow-[0_6px_32px_rgba(127,86,217,0.45)] hover:bg-[#6e48c2] hover:scale-[1.03] active:scale-[0.98] transition-all duration-150 no-underline mb-3">Book Your Free AI Strategy Call</a>
+          <p class="text-[var(--color-text-secondary)] text-[13px]">30 minutes. No pitch. Just clarity on where your business is bleeding time.</p>
+        </div>
+      </section>
+
+      <!-- SECTION 4 — PROBLEM REVEAL -->
+      <section class="bg-[var(--color-dark-bg)] text-white section-padding px-6">
+        <h2 class="heading-max font-bold text-center mb-12">
+          The little-known reason your team wastes 10+ hours a week, and it has nothing to do with headcount
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] space-y-6">
+          <p>Every week you stay stuck in this cycle, your competitors are pulling ahead.</p>
+          <p>Not because they're smarter.</p>
+          <p><span class="font-bold">Because they've figured out how to make their systems do the repetitive work.</span> So their team can focus on growth.</p>
+          <p>The gap between you and them isn't talent. It's not budget.</p>
+          <p>It's that they've solved the problem you're still muscling through manually.</p>
+          <p>And that gap gets wider every single week.</p>
+          <p>So what's the actual problem?</p>
+          <p>It's not the AI. The AI is incredible. You know that already.</p>
+          <p><span class="highlight-dark">The problem is that nobody set it up properly for your business.</span></p>
+          <p><span class="font-bold">No context. No memory. No connection to the tools you already use.</span></p>
+          <p>Just a raw brain. And you're expected to figure it out yourself.</p>
+          <p>That's like handing someone a professional kitchen and expecting them to run a restaurant because the equipment is good.</p>
+
+          <div class="flex justify-center py-12">
+            <img
+              src="/assets/chef-kitchen.webp"
+              alt="A professional kitchen — the right setup makes all the difference"
+              class="w-full max-w-[600px] rounded-2xl shadow-2xl"
+              loading="lazy"
+            />
+          </div>
+
+          <p>The equipment was never the bottleneck. The system around it was.</p>
+          <p><span class="font-bold">I build that system.</span></p>
+          <p>And there's one piece in particular that changes everything.</p>
+          <p>Later I'll show you exactly what it looks like in action.</p>
+          <p>A full week of content planned, ad reports generated, and product briefs drafted before your team opens their laptops on Monday.</p>
+          <p>But first, let me show you the piece that makes it all work:</p>
+          <p class="italic">(Bear with me — this is the part where most people go "oh shit, THAT'S what I've been missing.")</p>
+        </div>
+      </section>
+
+      <!-- SECTION 5 — SKILLS EXPLANATION -->
+      <section class="bg-[var(--color-dark-bg)] text-white pt-8 pb-16 px-6">
+        <h2 class="heading-max font-bold text-center mb-12">
+          How to get AI to actually know your business, your brand voice, your products, and your SOPs
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] space-y-6">
+          <p>The answer is <span class="font-bold">skills.</span></p>
+          <p>Not "skills" as in talent. And not just uploading a bunch of PDFs into a chat and hoping for the best. You've already tried that.</p>
+          <p>Skills are special instructions that live permanently inside your AI system.</p>
+          <p>Loaded automatically before every task. <span class="font-bold">Every time.</span></p>
+          <p>No re-uploading. No copy-pasting. No forgetting.</p>
+          <p>Think about hiring someone new. You don't just hand them a laptop and say "figure it out."</p>
+          <p><span class="highlight-dark">You walk them through the brand voice. The product line. The tools. The quirks that only insiders know.</span></p>
+          <p>That's exactly what I build for your AI. Except it never forgets any of it.</p>
+          <p><span class="font-bold">And here's where it gets stupid good.</span></p>
+          <p>Any process your team refines with the AI can be turned into a new skill.</p>
+          <p>Figured out the perfect way to structure your weekly ad reports? That's a skill now.</p>
+          <p>Dialed in your email promo tone after three rounds of feedback? Skill.</p>
+          <p>Nailed your product launch brief format? <span class="italic">Skill.</span></p>
+          <p>The system gets sharper every week you use it.</p>
+          <p>Not dumber. Not slower. <span class="font-bold">Better.</span></p>
+          <p>But skills are just one piece. The full system looks something like this:</p>
+
+          <div class="flex justify-center py-8">
+            <img
+              src="/assets/diagram.svg"
+              alt="Steal Friday AI system architecture — Brain, Skills &amp; Memory, Knowledge Base, Connections, Security"
+              class="w-full max-w-[700px]"
+              loading="lazy"
+            />
+          </div>
+
+          <p>Pretty, right?</p>
+          <p>But pretty diagrams don't make you money. Let me show you the piece that does.</p>
+        </div>
+      </section>
+
+      <!-- SECTION 6 — CONNECTIONS -->
+      <section class="bg-[var(--color-dark-bg)] text-white pt-8 pb-16 px-6">
+        <h2 class="heading-max font-bold text-center mb-12">
+          The system that turns raw data into finished briefs, without your team touching a spreadsheet
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] space-y-6">
+          <p>This is where most AI setups hit a wall.</p>
+          <p>Your AI writes a great email draft. Now you copy-paste it into Gmail.</p>
+          <p>Your AI analyzes last week's ads. Now you manually update the spreadsheet.</p>
+          <p>Your AI creates a product brief. Now you drag it into Google Drive and Slack the link to your team.</p>
+          <p>The AI thinks. But you're still the one doing.</p>
+          <p><span class="font-bold">This system changes that.</span></p>
+          <p>Your AI reaches into the tools you already use.</p>
+          <p><span class="highlight-dark">Shopify. Klaviyo. Triple Whale. Google Workspace. Slack. Meta.</span></p>
+          <p>And actually finishes the work.</p>
+          <p>It pulls your ad performance data without you exporting a CSV.</p>
+          <p>Drafts the email and sends it (<span class="font-bold">after you approve</span>).</p>
+          <p>Generates the report and drops it where your team expects to find it.</p>
+          <p><span class="highlight-dark">No copy-pasting. No dragging files between tabs. No being the human glue between your own systems.</span></p>
+          <p class="font-bold">Your AI doesn't just think. It does.</p>
+          <p>And there's another layer I build.</p>
+          <p>One that gives your AI access to expert-level knowledge from any source you choose. <span class="font-bold">Entire books. Courses. Podcasts. Frameworks.</span></p>
+          <p><span class="font-bold">But I'm saving that for the call.</span> Because honestly? When I show people this part, it's the thing that makes them say "wait, it can do THAT?"</p>
+          <p>I'd rather show you live than try to explain it in text.</p>
+          <p>Right now, let me show you what all of this looks like when it's actually running:</p>
+        </div>
+      </section>
+
+      <!-- SECTION 7 — DREAM OUTCOME -->
+      <section class="section-padding px-6 bg-[var(--color-white-bg)]">
+        <h2 class="heading-max font-bold text-center mb-12">
+          How to get expert-level briefs, email drafts, and ad reports generated before your team opens their laptops on Monday
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] space-y-6">
+          <p>Monday morning. Your marketing manager opens her laptop.</p>
+          <p>She needs this week's content planned.</p>
+          <p>In the old world, that's half a day.</p>
+          <p>Pull last month's analytics. Check what competitors posted. Research trends. Brainstorm ideas. Write briefs. Update the content calendar.</p>
+          <p><span class="font-bold">Here's what happens now.</span></p>
+          <p>She types one line: "Plan this week's content."</p>
+          <p>The system spins up an agent loaded with your analytics skill.</p>
+          <p>It pulls your last 30 days of social media metrics. Scrapes your top three competitors' recent posts. What performed. What didn't. What you could iterate on.</p>
+          <p>At the same time, a second agent scours the internet for the latest content trends in your niche.</p>
+          <p>Both pass their findings back to the main agent.</p>
+          <p>It cross-references everything. Your performance. Your competitors. What's trending.</p>
+          <p>And generates new post ideas.</p>
+          <p>Not generic ideas. Ideas built on your brand voice, your product catalog, and your actual data.</p>
+          <p>It asks which ones she likes.</p>
+          <p>She picks four.</p>
+          <p>The system drafts them. Hooks. Captions. Storyboards. Scripts.</p>
+          <p>Using principles from the content creators and marketing experts you've loaded into the knowledge base.</p>
+          <p>Not "best practices" pulled from a Google search. <span class="font-bold">The specific frameworks from the specific people you trust.</span></p>
+          <p>She reviews. Tweaks one caption. Approves the rest.</p>
+          <p>The system updates your content calendar. No manual entry. No spreadsheet. No copy-paste.</p>
+          <p><span class="highlight">From "plan this week's content" to a populated calendar with researched, on-brand, data-backed posts. In minutes.</span></p>
+
+          <div class="text-center py-5 text-[60px] md:text-[100px]">😎</div>
+
+          <p class="font-bold">That's one workflow. Here's what else changes:</p>
+          <p>Last week's ad performance report? Already waiting when your media buyer logs in.</p>
+          <p>Broken down by campaign. Winners flagged. Rising CPAs called out. Budget shift recommendations included.</p>
+          <p><span class="highlight">She didn't pull it. She didn't cross-reference three dashboards. It was there.</span></p>
+          <p>Product launch brief? Your ops person prompts the system once.</p>
+          <p>It pulls from your catalog, your past launches, your competitive positioning.</p>
+          <p>First draft in 3 minutes. <span class="font-bold">A good one.</span></p>
+          <p>Customer escalation? Your CS lead gets a suggested response drafted in your brand voice.</p>
+          <p>Full order history already pulled. Review. Tweak. Send.</p>
+          <p>By Thursday, your team has shipped what used to take until Friday.</p>
+          <p><span class="highlight">Friday comes. Nothing is on fire. Nothing is behind.</span></p>
+          <p>For the first time in months, <span class="font-bold">you close your laptop and it stays closed.</span></p>
+          <p>That's not a fantasy. That's what happens when your AI actually knows your business, connects to your tools, and has the system around it to do <span class="font-bold">real work.</span></p>
+
+          <!--
+            VIDEO SECTION — temporarily removed until video is filmed.
+            Restore when Wistia embed is ready. See homepage-copy.md Sec 7 for full copy.
+            The intro line was: "But don't take my word for it. Watch me do it:"
+            Replace this comment with the Wistia embed + intro paragraph.
+          -->
+        </div>
+
+        <div class="text-center mt-16">
+          <a href="https://cal.com/beerrodenburg/strategy" target="_blank" rel="noopener noreferrer" class="inline-block bg-[var(--color-purple-accent)] text-white font-bold text-[16px] md:text-[20px] py-[14px] md:py-[20px] px-[28px] md:px-[52px] rounded-[10px] shadow-[0_6px_32px_rgba(127,86,217,0.45)] hover:bg-[#6e48c2] hover:scale-[1.03] active:scale-[0.98] transition-all duration-150 no-underline mb-3">I Want This For My Business</a>
+          <p class="text-[var(--color-text-secondary)] text-[13px]">No pitch. No commitment. Just a clear plan.</p>
+        </div>
+      </section>
+
+      <!-- SECTION 8 — ROI MATH -->
+      <section class="pt-8 pb-16 px-6 bg-[var(--color-white-bg)]">
+        <h2 class="heading-max font-bold text-center mb-8">
+          The $30,000 problem hiding in your team's calendar
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] space-y-6">
+          <p>Let's do some quick math.</p>
+          <p>Your team wastes 10+ hours a week on work this system should be handling. And 10 is being nice about it — most teams I talk to are closer to 15 or 20.</p>
+          <p>At $30/hr average, that's <span class="font-bold">$1,200 to $2,400 per month.</span> In pure labor costs. On work that doesn't move the needle. On work that a system should've been doing this whole time.</p>
+          <p>That's <span class="font-bold">$15,000 to $30,000 a year.</span></p>
+          <p>Spent on pulling reports. Drafting emails from scratch. Cross-referencing dashboards. Updating spreadsheets nobody reads.</p>
+          <p>And that's just one person. <span class="font-bold">Multiply that across your team.</span></p>
+
+          <div class="text-center py-5 text-[60px] md:text-[100px]">💸</div>
+          <p>Now imagine getting most of that time back.</p>
+          <p>What would your marketing manager do with an extra 10 hours a week if she wasn't pulling reports?</p>
+          <p>What would your ops person ship if they weren't buried in busywork?</p>
+          <p>What would <span class="italic">you</span> do if Friday was actually free?</p>
+          <p>That's what this system delivers. And here's how we start:</p>
+        </div>
+      </section>
+
+      <!-- SECTION 9 — FREE CALL OFFER -->
+      <section class="pt-8 pb-16 px-6 bg-[var(--color-white-bg)] text-center">
+        <h2 class="heading-max font-bold mb-8">
+          Free 30-minute AI strategy call
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] text-left mb-8 space-y-6">
+          <p>Book your free 30-minute strategy call ($500 value). Here's what you walk away with — whether we work together or not:</p>
+          <p>A clear diagnosis of where your team is bleeding hours.</p>
+          <p>A tool recommendation matched to how your business actually operates.</p>
+          <p>A framework you can act on immediately. Like, tomorrow morning.</p>
+          <p>No pitch. No "let me loop in my sales team."</p>
+          <p>Just me. On a call. Telling you exactly what I'd build if I were you.</p>
+        </div>
+
+        <p class="text-[14px] text-[var(--color-text-secondary)] mb-8">
+          I take on 3 new clients per month. That's it.
+        </p>
+
+        <a href="https://cal.com/beerrodenburg/strategy" target="_blank" rel="noopener noreferrer" class="inline-block bg-[var(--color-purple-accent)] text-white font-bold text-[16px] md:text-[20px] py-[14px] md:py-[20px] px-[28px] md:px-[52px] rounded-[10px] shadow-[0_6px_32px_rgba(127,86,217,0.45)] hover:bg-[#6e48c2] hover:scale-[1.03] active:scale-[0.98] transition-all duration-150 no-underline mb-4">Lock In My Free Strategy Call</a>
+        <p class="text-[var(--color-text-secondary)] text-[13px]">30 minutes. Zero fluff. I'll tell you where you're leaking time and money — even if you never hire me.</p>
+      </section>
+
+      <!-- GUARANTEE -->
+      <section class="bg-[var(--color-dark-bg)] text-white section-padding px-6">
+        <h2 class="heading-max font-bold text-center mb-12">
+          Why I'm practically begging you to take my money back
+        </h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] space-y-6">
+          <p>Look, I get it. You've heard promises before.</p>
+          <p>Every agency. Every tool. Every "game-changing" solution swore it would be different this time.</p>
+          <p>And every time, you ended up right back where you started. Except lighter in the wallet.</p>
+          <p>So I'm not going to ask you to trust me. I'm going to remove the risk entirely.</p>
+          <p>If your team isn't saving 10+ hours per week within 30 days of setup, <span class="font-bold">you don't pay. Period.</span></p>
+          <p>Not a partial refund. Not credit toward future work. Not a "let's hop on a call and talk about it."</p>
+          <p><span class="font-bold">Full refund. No questions.</span> No friction. No awkward email chain.</p>
+          <p>Why would I offer this?</p>
+          <p>Because I've built these systems. I know what happens when a team goes from manually pulling reports to having them ready before they open their laptops.</p>
+          <p>I know what happens when your AI actually knows your brand, your products, your SOPs.</p>
+          <p>And doesn't forget them the next day.</p>
+          <p>The results are borderline absurd. I don't need a contract to trap you into staying.</p>
+          <p>And honestly? If the system doesn't save your team 10+ hours a week, I don't deserve your money. Simple as that.</p>
+          <p>So here's the deal.</p>
+          <p>You try it. If it works, great. If it doesn't, you walk away with <span class="font-bold">everything I built for you, and you don't pay a cent.</span></p>
+          <p>I'm the one taking the risk here. And I'm fine with that. <span class="italic">(Frankly, I'm more worried you'll try to hire me full-time.)</span></p>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section class="bg-[var(--color-dark-bg)] text-white pt-8 pb-16 px-6 text-center">
+        <h2 class="heading-max font-bold mb-6">
+          Book your free AI strategy call
+        </h2>
+        <p class="text-white/60 text-[16px] md:text-[20px] mb-10">
+          30 minutes. No pitch. Just clarity on where your business is leaking time and money.
+        </p>
+        <a href="https://cal.com/beerrodenburg/strategy" target="_blank" rel="noopener noreferrer" class="inline-block bg-[var(--color-purple-accent)] text-white font-bold text-[16px] md:text-[20px] py-[14px] md:py-[20px] px-[28px] md:px-[52px] rounded-[10px] shadow-[0_6px_32px_rgba(127,86,217,0.45)] hover:bg-[#6e48c2] hover:scale-[1.03] active:scale-[0.98] transition-all duration-150 no-underline">Lock In My Free Strategy Call</a>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section-padding px-6 bg-[var(--color-white-bg)]">
+        <h2 class="heading-max font-bold text-center mb-16">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="body-max space-y-4">
+
+          <div class="border-b border-[var(--color-border-light)] pb-4">
+            <button class="faq-button w-full flex justify-between items-center text-left py-4 font-bold text-[18px] hover:text-[var(--color-purple-accent)] transition-colors" data-open="false">
+              <span>I've been burned by agencies before. How are you different?</span>
+              <svg class="chevron-down w-5 h-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <svg class="chevron-up w-5 h-5 flex-shrink-0 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+            <div id="faq-answer-0" class="faq-answer hidden pb-4 text-[16px] md:text-[20px] leading-[1.5] text-[var(--color-text-secondary)]">
+              Because this isn't an agency. There's no retainer. No vague "deliverables" that look nice in a PDF but change nothing about your Tuesday. It's a one-time build with a specific outcome: 10+ hours a week saved. And if it doesn't deliver within 30 days, you don't pay. No agency on earth has ever offered you that. Because they can't.
+            </div>
+          </div>
+
+          <div class="border-b border-[var(--color-border-light)] pb-4">
+            <button class="faq-button w-full flex justify-between items-center text-left py-4 font-bold text-[18px] hover:text-[var(--color-purple-accent)] transition-colors" data-open="false">
+              <span>My team won't actually use it.</span>
+              <svg class="chevron-down w-5 h-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <svg class="chevron-up w-5 h-5 flex-shrink-0 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+            <div id="faq-answer-1" class="faq-answer hidden pb-4 text-[16px] md:text-[20px] leading-[1.5] text-[var(--color-text-secondary)]">
+              That's exactly why I train them hands-on. Not a PDF manual. Not a Loom link. I get on a call with your team, build prompts for their actual workflows, and I'm one message away for 30 days after handoff. Most AI setups fail because the team never actually uses them. I build around that from day one. If your team doesn't use it, I've failed. And you don't pay.
+            </div>
+          </div>
+
+          <div class="border-b border-[var(--color-border-light)] pb-4">
+            <button class="faq-button w-full flex justify-between items-center text-left py-4 font-bold text-[18px] hover:text-[var(--color-purple-accent)] transition-colors" data-open="false">
+              <span>I've tried AI tools before and they didn't stick.</span>
+              <svg class="chevron-down w-5 h-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <svg class="chevron-up w-5 h-5 flex-shrink-0 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+            <div id="faq-answer-2" class="faq-answer hidden pb-4 text-[16px] md:text-[20px] leading-[1.5] text-[var(--color-text-secondary)]">
+              Yeah, because those tools were a raw brain with no skills, no memory, and no connection to your actual tools. Of course they didn't stick. That's like buying a $3,000 espresso machine and wondering why your coffee tastes like shit when you've never dialed in the grind. This is a system configured specifically for your business. It knows your brand, your products, your SOPs from day one. Big, big difference.
+            </div>
+          </div>
+
+          <div class="border-b border-[var(--color-border-light)] pb-4">
+            <button class="faq-button w-full flex justify-between items-center text-left py-4 font-bold text-[18px] hover:text-[var(--color-purple-accent)] transition-colors" data-open="false">
+              <span>How do I know you can actually do this? You're new.</span>
+              <svg class="chevron-down w-5 h-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <svg class="chevron-up w-5 h-5 flex-shrink-0 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+            <div id="faq-answer-3" class="faq-answer hidden pb-4 text-[16px] md:text-[20px] leading-[1.5] text-[var(--color-text-secondary)]">
+              That's exactly why the guarantee exists. I'm not asking you to trust a portfolio. I'm asking for a chance to prove it. And I'm putting my entire fee on the line. If the system doesn't deliver 10+ hours a week within 30 days, I eat the cost. Not you. I couldn't make that offer if I wasn't confident it works.
+            </div>
+          </div>
+
+          <div class="border-b border-[var(--color-border-light)] pb-4">
+            <button class="faq-button w-full flex justify-between items-center text-left py-4 font-bold text-[18px] hover:text-[var(--color-purple-accent)] transition-colors" data-open="false">
+              <span>What if the AI tools change or break after you leave?</span>
+              <svg class="chevron-down w-5 h-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <svg class="chevron-up w-5 h-5 flex-shrink-0 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+            <div id="faq-answer-4" class="faq-answer hidden pb-4 text-[16px] md:text-[20px] leading-[1.5] text-[var(--color-text-secondary)]">
+              The system is yours. The skills, the memory, the connections, everything lives in your environment, on your accounts. Training ensures your team can maintain and adjust it. And the system gets smarter over time, any process your team refines becomes a new skill, so it keeps improving after I leave. I'm available for 30 days post-handoff for exactly this reason.
+            </div>
+          </div>
+
+          <div class="border-b border-[var(--color-border-light)] pb-4">
+            <button class="faq-button w-full flex justify-between items-center text-left py-4 font-bold text-[18px] hover:text-[var(--color-purple-accent)] transition-colors" data-open="false">
+              <span>Can't I just set this up myself?</span>
+              <svg class="chevron-down w-5 h-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <svg class="chevron-up w-5 h-5 flex-shrink-0 hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+            <div id="faq-answer-5" class="faq-answer hidden pb-4 text-[16px] md:text-[20px] leading-[1.5] text-[var(--color-text-secondary)]">
+              Honestly? You could. The same way you could build your own Shopify theme or run your own ads. The question is whether the 20–40 hours it would take you to figure out the right AI tool, build the skills, set up the memory, wire up the connections, and get the guardrails right — is worth more than having someone who's already done it build it for you in two weeks. (If you're reading this page, I think you already know the answer.)
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- P.S. / FINAL CLOSE -->
+      <section class="pb-24 px-6 bg-[var(--color-white-bg)] text-center">
+        <h2 class="heading-max font-bold text-center mb-12">P.S.</h2>
+
+        <div class="body-max text-[16px] md:text-[20px] leading-[1.5] text-left space-y-6 mb-12">
+          <p>Every week you wait is another week your team spends 10+ hours on work a system should be handling. <span class="font-bold">That's $1,200 to $2,400 gone. Every single week.</span></p>
+          <p>And right now, there's a founder in your category figuring out how to make AI work for their brand.</p>
+          <p>When they do, they'll move faster, ship more, and run leaner.</p>
+          <p>Not because they're smarter. Because their systems are.</p>
+          <p>Here's what happens on the call.</p>
+          <p>I'll ask how your business actually runs. Who does what. What takes too long. Where the bottlenecks are.</p>
+          <p>Then I'll tell you exactly which tools would fix it. Claude, Perplexity, n8n, or some combination.</p>
+          <p>And I'll map out what this secret AI-system would look like for your specific business.</p>
+          <p>You'll walk away with a clear plan. Whether you hire me or not.</p>
+          <p>30 minutes. No cost. No pitch.</p>
+          <p>I take on 3 clients a month. Spots fill up.</p>
+          <p class="font-bold">Don't be the person who reads this whole page, nods along, and then does absolutely nothing.</p>
+        </div>
+
+        <a href="https://cal.com/beerrodenburg/strategy" target="_blank" rel="noopener noreferrer" class="inline-block bg-[var(--color-purple-accent)] text-white font-bold text-[16px] md:text-[20px] py-[14px] md:py-[20px] px-[28px] md:px-[52px] rounded-[10px] shadow-[0_6px_32px_rgba(127,86,217,0.45)] hover:bg-[#6e48c2] hover:scale-[1.03] active:scale-[0.98] transition-all duration-150 no-underline">Lock In My Free Strategy Call</a>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="bg-[var(--color-white-bg)] border-t border-[var(--color-border-light)] py-8 px-6 text-center text-[13px] text-[var(--color-text-secondary)]">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+          <span>© 2026 Steal Friday</span>
+          <span class="hidden md:inline">•</span>
+          <a href="#" class="hover:text-[var(--color-text-dark)] transition-colors">Privacy Policy</a>
+          <span class="hidden md:inline">•</span>
+          <a href="#" class="hover:text-[var(--color-text-dark)] transition-colors">Terms of Service</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <script>
+      // Dynamic date in BREAKING banner
+      const d = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).toUpperCase();
+      document.getElementById('breaking-date').textContent = d;
+
+      // FAQ accordion
+      document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.faq-button');
+        buttons.forEach(function(button, index) {
+          button.addEventListener('click', function() {
+            const isOpen = button.getAttribute('data-open') === 'true';
+            // Close all
+            buttons.forEach(function(b, i) {
+              b.setAttribute('data-open', 'false');
+              b.querySelector('.chevron-down').classList.remove('hidden');
+              b.querySelector('.chevron-up').classList.add('hidden');
+              const ans = document.getElementById('faq-answer-' + i);
+              if (ans) ans.classList.add('hidden');
+            });
+            // Open clicked if it was closed
+            if (!isOpen) {
+              button.setAttribute('data-open', 'true');
+              button.querySelector('.chevron-down').classList.add('hidden');
+              button.querySelector('.chevron-up').classList.remove('hidden');
+              const answer = document.getElementById('faq-answer-' + index);
+              if (answer) {
+                answer.classList.remove('hidden');
+                setTimeout(function() {
+                  answer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 50);
+              }
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
